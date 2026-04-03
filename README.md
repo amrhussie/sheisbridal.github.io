@@ -1,4 +1,4 @@
-index.html
+Index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
