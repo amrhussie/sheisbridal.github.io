@@ -1,120 +1,34 @@
-Index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>She Is Bridal</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <img src="logo.png" alt="She Is Bridal Logo" class="logo">
-    <h1>She Is Bridal</h1>
-    <p>Luxury Wedding Dresses - Nasr City, Cairo</p>
-  </header>
+# She Is Bridal — Website
 
-  <!-- About -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>She Is Bridal embodies elegance and craftsmanship, offering luxury wedding dresses for modern brides. We specialize in rental, custom-made gowns, and exclusive fittings at our boutique in Nasr City.</p>
-  </section>
+Luxury wedding-dress boutique landing page. Nasr City, Cairo.
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>Our Collection</h2>
-    <div class="images">
-      <img src="dress1.jpg" alt="Wedding Dress 1">
-      <img src="dress2.jpg" alt="Wedding Dress 2">
-      <img src="dress3.jpg" alt="Wedding Dress 3">
-    </div>
-  </section>
+## What was fixed vs. the previous version
+- File renamed from `Index.html` to `index.html` (lowercase) — GitHub Pages only
+  auto-serves a lowercase `index.html` at the root; the capitalized name is why
+  the site wasn't loading correctly.
+- All `<img>` references now point to real files that exist in `/images`
+  (previously `logo.png`, `dress1.jpg`, `dress2.jpg`, `dress3.jpg` were referenced
+  but never uploaded to the repo, so every image was broken).
+- The Google Maps embed previously contained a truncated placeholder URL
+  (`...!1m18!...`). It's now a working embed built from your shared location link.
+- Full redesign: quiet-luxury visual identity (ivory / charcoal / gold),
+  Cormorant Garamond + Jost typography, responsive layout, mobile menu,
+  scroll-reveal animation (disabled automatically for users with
+  "reduce motion" turned on).
+- Added `.nojekyll` so GitHub Pages serves the files as-is.
 
-  <!-- Contact -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Address: 1 Zaki Rostom, Abbas Al-Aqqad, Nasr City, Cairo</p>
-    <p>📞 Phone: <a href="tel:01034617924">01034617924</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/201034617924">Chat Now</a></p>
-    <p>📷 Instagram: <a href="https://www.instagram.com/sheisbridal">sheisbridal</a></p>
-    <p>📘 Facebook: <a href="https://www.facebook.com/p/She-Is-Bride-615512348484621/">She Is Bride</a></p>
-    <p>🎵 TikTok: <a href="https://www.tiktok.com/@she.is.bridal">she.is.bridal</a></p>
-    
-    <!-- Booking Button -->
-    <p>📅 Book Appointment: 
-      <a href="mailto:sarahhussienb830@gmail.com?subject=Booking%20Appointment%20-%20She%20Is%20Bridal">Click Here</a>
-    </p>
-  </section>
+## Deploy to GitHub Pages
+1. Delete the old `Index.html` and any unused image files from the repo
+   (`amrhussie/sheisbridal.github.io`), or start fresh.
+2. Upload everything in this folder (`index.html`, `style.css`, `script.js`,
+   `.nojekyll`, and the `images/` folder) to the root of the repo, on the
+   `main` branch.
+3. In the repo, go to **Settings → Pages** and confirm the source is
+   "Deploy from a branch" → `main` → `/ (root)`.
+4. Wait 1–2 minutes, then visit https://amrhussie.github.io/sheisbridal.github.io/
 
-  <!-- Map -->
-  <section class="map">
-    <h2>Find Us</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen></iframe>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 She Is Bridal. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
-styl.css
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>She Is Bridal</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <img src="logo.png" alt="She Is Bridal Logo" class="logo">
-    <h1>She Is Bridal</h1>
-    <p>Luxury Wedding Dresses - Nasr City, Cairo</p>
-  </header>
-
-  <!-- About -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>She Is Bridal embodies elegance and craftsmanship, offering luxury wedding dresses for modern brides. We specialize in rental, custom-made gowns, and exclusive fittings at our boutique in Nasr City.</p>
-  </section>
-
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>Our Collection</h2>
-    <div class="images">
-      <img src="dress1.jpg" alt="Wedding Dress 1">
-      <img src="dress2.jpg" alt="Wedding Dress 2">
-      <img src="dress3.jpg" alt="Wedding Dress 3">
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Address: 1 Zaki Rostom, Abbas Al-Aqqad, Nasr City, Cairo</p>
-    <p>📞 Phone: <a href="tel:01034617924">01034617924</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/201034617924">Chat Now</a></p>
-    <p>📷 Instagram: <a href="https://www.instagram.com/sheisbridal">sheisbridal</a></p>
-    <p>📘 Facebook: <a href="https://www.facebook.com/p/She-Is-Bride-615512348484621/">She Is Bride</a></p>
-    <p>🎵 TikTok: <a href="https://www.tiktok.com/@she.is.bridal">she.is.bridal</a></p>
-    
-    <!-- Booking Button -->
-    <p>📅 Book Appointment: 
-      <a href="mailto:sarahhussienb830@gmail.com?subject=Booking%20Appointment%20-%20She%20Is%20Bridal">Click Here</a>
-    </p>
-  </section>
-
-  <!-- Map -->
-  <section class="map">
-    <h2>Find Us</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen></iframe>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 She Is Bridal. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+## Editing later
+- Text content: edit `index.html` directly.
+- Colors / fonts / spacing: edit the `:root` variables at the top of `style.css`.
+- Swapping photos: replace files inside `images/` and keep the same filenames,
+  or update the `src` paths in `index.html`.
