@@ -5,7 +5,7 @@ if (navToggle && mobileMenu) {
     mobileMenu.classList.toggle('open', open);
     mobileMenu.hidden = !open;
     navToggle.setAttribute('aria-expanded', String(open));
-    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    navToggle.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
   };
   navToggle.addEventListener('click', () => {
     setMenuState(navToggle.getAttribute('aria-expanded') !== 'true');
@@ -40,3 +40,20 @@ if (revealElements.length) {
     revealElements.forEach((element) => element.classList.add('in'));
   });
 }
+
+// Conversion Tracking (Pixels)
+const trackConversion = (eventName) => {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', eventName);
+  }
+  if (typeof ttq !== 'undefined') {
+    ttq.track('Contact');
+  }
+};
+
+document.querySelectorAll('.btn-book').forEach(btn => {
+  btn.addEventListener('click', () => trackConversion('Lead'));
+});
+document.querySelectorAll('.btn-whatsapp').forEach(btn => {
+  btn.addEventListener('click', () => trackConversion('Contact'));
+});
