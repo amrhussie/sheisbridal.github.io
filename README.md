@@ -32,3 +32,14 @@ Luxury wedding-dress boutique landing page. Nasr City, Cairo.
 - Colors / fonts / spacing: edit the `:root` variables at the top of `style.css`.
 - Swapping photos: replace files inside `images/` and keep the same filenames,
   or update the `src` paths in `index.html`.
+
+## SEO Verification Automation
+If you need to verify the site in Google Search Console or Bing Webmaster Tools using HTML meta tags,
+use the automation helper script:
+
+```bash
+node seo-verify.js --google=YOUR_GOOGLE_TOKEN --bing=YOUR_BING_TOKEN
+```
+
+This adds the correct `<meta name="google-site-verification">` and
+`<meta name="msvalidate.01">` tags to `index.html`. Then deploy the site and complete the verification step in the console.
